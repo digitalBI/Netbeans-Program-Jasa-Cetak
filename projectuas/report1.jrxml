@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="089022b4-3cae-4373-9b75-2f7891611ac4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM tblbeli]]>
+	</queryString>
+	<field name="no_transaksi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_bahan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_satuan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_cetak" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_cetak" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bayar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kembalian" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="10" width="187" height="57" uuid="8d261c83-be59-49b2-ae9a-bcf36dd0a8f5"/>
+				<textElement>
+					<font fontName="Louis George Café" size="48" isBold="true"/>
+				</textElement>
+				<text><![CDATA[digitalBI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="187" y="6" width="209" height="24" uuid="36a49469-45bf-481d-8cce-7b6844c31576"/>
+				<textElement>
+					<font fontName="Louis George Café" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN TRANSAKSI]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="13" width="83" height="20" uuid="c8e2f802-affe-4849-a033-e1f28fa28402"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NoTransaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="13" width="73" height="20" uuid="dd214f8b-3620-45af-b7ae-883e216cad5e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KodeBahan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="13" width="76" height="20" uuid="239fc34d-5b72-4daf-8215-cb95191f05af"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HargaSatuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="13" width="79" height="20" uuid="7112a04e-a5b3-48ad-b394-73dde93cd54f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JumlahCetak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="13" width="72" height="20" uuid="bf6f2220-b70b-4aa7-b4d9-a2fa722e8194"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HargaCetak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="13" width="56" height="20" uuid="a6a28d4e-dc38-4e1e-be90-f90e0670a118"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="493" y="13" width="62" height="20" uuid="6e276336-ea02-4f99-bb95-b131943fbe08"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kembalian]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="11" width="73" height="20" uuid="50f36280-cac3-4e38-bfd0-e4913b4fa648"/>
+				<textFieldExpression><![CDATA[$F{no_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="11" width="62" height="20" uuid="1cdb356f-cb2e-4d17-924c-64111f92ccea"/>
+				<textFieldExpression><![CDATA[$F{kode_bahan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="11" width="76" height="20" uuid="21e462ef-066e-40ce-9747-e0e9bf9fb09a"/>
+				<textFieldExpression><![CDATA[$F{harga_satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="11" width="79" height="20" uuid="5073b317-cac5-4d56-be2d-528ee723a750"/>
+				<textFieldExpression><![CDATA[$F{jumlah_cetak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="11" width="72" height="20" uuid="de80273c-23fe-4144-a09c-260c57267fe9"/>
+				<textFieldExpression><![CDATA[$F{harga_cetak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="11" width="56" height="20" uuid="8409c7c8-ad5a-43e1-9163-53e2473c5514"/>
+				<textFieldExpression><![CDATA[$F{bayar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="493" y="11" width="62" height="20" uuid="53015234-9485-4907-afda-1f0a544ddea2"/>
+				<textFieldExpression><![CDATA[$F{kembalian}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
